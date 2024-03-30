@@ -63,6 +63,8 @@ ol {
 .result__video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .result__video-container {
@@ -84,7 +86,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -101,7 +103,7 @@ ol {
 
 .button:focus-visible {
   outline-offset: 2px;
-  outline: 1px solid #fff;
+  outline: 1px solid currentColor;
 }
 
 
@@ -126,7 +128,7 @@ ol {
 }
 
 .content__card-link:focus-visible {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
 }
 
 .content__card-link:active {
@@ -145,8 +147,8 @@ ol {
   font-family: inherit;
   border: none;
   padding-left: 0;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   appearance: none;
   margin: 1px;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -172,10 +174,10 @@ ol {
 
 .button {
   cursor: pointer;
-  height: 34px;
+  min-height: 34px;
   background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid currentColor;
+  color: currentColor;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: bold;
@@ -199,12 +201,12 @@ ol {
   width: 19px;
   height: 19px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   display: inline-block;
 }
 
 .search-form__checkbox + .search-form__pseudo-checkbox {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -219,7 +221,7 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  background-color: #fff;
+  background-color: currentColor;
 }
   
 .content__details {
@@ -249,7 +251,7 @@ ol {
 
 .content__card-link {
   text-decoration: none;
-  color: #fff;
+  color: currentColor;
   border: 1px solid transparent;
   display: block;
 }
